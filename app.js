@@ -10,5 +10,5 @@ var server = app.listen(port, function () {
 
 //  Hello Worldを表示
 app.get("/", function (req, res, next) {
-    res.send("Hello World");
+    res.send("Hello World Change!!");
 });
