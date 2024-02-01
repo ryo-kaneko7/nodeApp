@@ -12,3 +12,7 @@ var server = app.listen(port, function () {
 app.get("/", function (req, res, next) {
     res.send("Hello World Change!!zz");
 });
+
+function unsafeFunction(userInput) {
+    eval(userInput); // This is very dangerous and will be flagged by SonarCloud
+}
